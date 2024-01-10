@@ -2,9 +2,6 @@
 * {
   font-family: "Open Sans";
 }
-body {
-  /* background: url(ryu.svg) no-repeat fixed center; */
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -47,7 +44,11 @@ img {
   color: red;
   align-self: start;
   margin-top: 30px;
-  transform: 360px;
+  transition: all 0.1s linear;
+}
+.close-btn:hover {
+  transform: rotate(360deg);
+  color: rgb(7, 193, 193);
 }
 body .open-modal {
   visibility: visible;
